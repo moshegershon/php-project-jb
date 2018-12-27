@@ -2,6 +2,7 @@
 // Data access layer
 final class DataAccessLayer
 {
+    
     private $host = '127.0.0.1';
     private $db = 'school';
     private $user = 'root';
