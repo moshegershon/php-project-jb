@@ -1,18 +1,4 @@
-<?php
-    // session_start();
-    // if (!empty($_GET['logout'])) {
-    //     session_destroy();
-    //     $_SESSION = [];
-    // }
-    // else if (!empty($_POST['email']) && !empty($_POST['pass'])) {
-    //     $email = $_POST['email'];
-    //     $pass = $_POST['pass'];
-    //     // from db
-    //     if ( $email == 'a@test.com' && $pass =='1234') {
-    //         $_SESSION['uid'] = 4;
-    //     }
-    // }
-?>
+
 
 
  <?php

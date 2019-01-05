@@ -35,7 +35,7 @@ if ( $_SESSION['pl']==1||$_SESSION['pl']==2){
 <h2> Add new course</h2>
     <form class="form-group" id='addcourse' action='<?php echo basename($_SERVER['PHP_SELF']); ?>' method='POST' novalidate>
         <input class="form-control" name='cname' placeholder='Course name' value='<?php echo !empty($_POST['cname']) ? $_POST['cname'] : '' ?>' >
-        <input class="form-control" name='cdesc' type="text"  placeholder="Course description"  >
+        <input  class="form-control" name='cdesc' type="text"  placeholder="Course description"  >
         <input class="form-control" name="pic" type="file" >
         <button class="form-control btn btn-primary" name="addc" type="submit" value="3">Save</button>
     </form>

@@ -70,12 +70,20 @@ You have a total of  <?php echo $bl->count(); ?> students in your academy</h4>
 <hr>
  <form action="<?php echo basename($_SERVER['PHP_SELF']);?>" method="POST">
  <h2> Get student by id</h2>
-<input type="number" placeholder="id" name="id"> 
+<input id="id" type="text" placeholder="id" name="id"> 
 <button type="submit" class="btn btn-primary" name="getbyid" value="3">submit</button>
 </form>
 <hr>
 <?php
 if(!empty($_POST['id'])){
+    ?>
+    <script> if (isNaN(document.getelementbyid('id').valeu)){
+        prompt('The id must be a number');
+    // <div class="alert alert-primary">
+    //     <strong>The id must be a number</strong>
+    // </div>
+    }</script>
+    <?php
     $item = $bl->getOne($_POST['id']);
     if (!$item->getId()){
         ?>
